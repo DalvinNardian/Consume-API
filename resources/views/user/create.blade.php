@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Concume API</title>
+	<title>Consume API</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
 </head>
-<body style="background: lightgray">
+<body style="background: purple">
 	
     <div class="container mt-5 mb-5">
         <div class="row">
@@ -19,7 +19,8 @@
             <div class="col-md-12">
                 <div class="border-0 shadow rounded">
                     <div class="card-body bg-white">
-                        <form action="" method="POST">
+                        <form method="POST" action="{{ route('users.store') }}">
+                            @csrf
                             <div class="mb-3">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">First Name</label>

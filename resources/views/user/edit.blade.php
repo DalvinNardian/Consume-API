@@ -17,7 +17,7 @@
                 <div class="border-0 shadow rounded">
                     <div class="card-body bg-white">
                         <form method="POST" action="{{ route('users.update', $user['id']) }}">
-                            @method('patch')
+                            @method('put')
                             @csrf
                         
                             <h4>Edit User</h4>
